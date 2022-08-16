@@ -1,0 +1,28 @@
+{
+    "IN1": 24,
+    "IN2": 23,
+    "EN": 25,
+    "SLEEP_DURATION": 2,
+    "FREQUENCY": 50,
+    "DUTY_CYCLE": 75,
+    "TIME_TO_OPEN": 60,
+    "EARLIEST_OPEN": "07:00:00",
+    "BUFFER_AFTER_SUNSET": 2700,
+    "LOG_CONFIG": {
+        "version": 1,
+        "formatters": {
+            "f": {
+                "format": "%(asctime)s %(name)-12s %(levelname)-8s %(message)s"}
+        },
+        "handlers": {
+            "h": {
+                "class": "logging.StreamHandler",
+                "formatter": "f"
+            }
+        },
+        "root": {
+            "handlers": ["h"],
+            "level": "INFO"
+        }
+    }
+}
